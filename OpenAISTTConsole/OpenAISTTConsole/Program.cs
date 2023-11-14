@@ -3,7 +3,7 @@ using Spectre.Console;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
 
-var isRunning = true;
+bool isRunning = true;
 
 while (isRunning)
 {
