@@ -6,11 +6,6 @@ namespace OpenAISTTConsole.Models;
 ///     Represents a response of the transcription
 ///     request.
 /// </summary>
-internal class SpeechToTextResponse
-{
-    /// <summary>
-    ///     The transcribed text of the audio file.
-    /// </summary>
-    [JsonPropertyName("text")]
-    public string Text { get; set; } = string.Empty;    
-}
+/// <param name="Text"> The transcribed text of the audio file. </param>
+internal record SpeechToTextResponse(
+    [property: JsonPropertyName("text")] string? Text);
